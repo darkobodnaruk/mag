@@ -1,0 +1,4 @@
+simulate-trading-v7.rb
+----------------------
+- kenslaj counter (avtomatski izhod iz trejda po N periodah)
+- ostani v long trejdu dokler je napoved "buy" (in obratno)

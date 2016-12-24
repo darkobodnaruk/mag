@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="MacRoman"?>
+<process version="4.1">
+
+  <operator name="Root" class="Process" expanded="yes">
+      <operator name="CSVExampleSource" class="CSVExampleSource">
+          <parameter key="filename"	value="/Users/darkobodnaruk/magisterij/code/2-MAsignals/EURUSD-30-lookahead10-MAinRSI.csv"/>
+          <parameter key="label_name"	value="class"/>
+      </operator>
+      <operator name="AttributeFilter" class="AttributeFilter">
+      </operator>
+      <operator name="RuleLearner" class="RuleLearner">
+      </operator>
+  </operator>
+
+</process>

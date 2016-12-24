@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="MacRoman"?>
+<process version="4.1">
+
+  <operator name="Root" class="Process" expanded="yes">
+      <operator name="CSVExampleSource" class="CSVExampleSource">
+          <parameter key="filename"	value="/Users/darkobodnaruk/magisterij/code/2-MAsignals/EURUSD-30/split-04000.csv"/>
+          <parameter key="id_name"	value="datum"/>
+          <parameter key="label_name"	value="class"/>
+      </operator>
+      <operator name="SlidingWindowValidation" class="SlidingWindowValidation" expanded="yes">
+          <operator name="OperatorChain" class="OperatorChain" expanded="yes">
+              <operator name="BasicRuleLearner" class="BasicRuleLearner">
+              </operator>
+          </operator>
+          <operator name="OperatorChain (2)" class="OperatorChain" expanded="yes">
+              <operator name="ModelApplier" class="ModelApplier">
+                  <list key="application_parameters">
+                  </list>
+              </operator>
+              <operator name="Performance" class="Performance">
+              </operator>
+          </operator>
+      </operator>
+  </operator>
+
+</process>
